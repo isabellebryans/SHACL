@@ -1,0 +1,42 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xs:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <https://ex.org/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+
+
+## Object properties:
+:hasVertice rdf:type owl:ObjectProperty;
+            rdfs:range :point.
+
+## Data:
+:s1 rdf:type :blue.
+:s1 rdf:type :triangle.
+
+:s2 rdf:type :green.
+:s2 rdf:type :square.
+
+:s3 rdf:type :blue.
+:s3 rdf:type :circle.
+
+## Vertices:
+
+:v1 rdf:type :point.
+:s1 :hasVertice :v1.
+
+:v2 rdf:type :point.
+:s1 :hasVertice :v2.
+
+:v3 rdf:type :point.
+:s1 :hasVertice :v3.
+
+:v5 rdf:type :point.
+:s2 :hasVertice :v5.
+
+:v6 rdf:type :point.
+:s2 :hasVertice :v6.
+
+:v7 rdf:type :point.
+:s2 :hasVertice :v7.

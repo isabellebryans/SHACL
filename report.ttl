@@ -1,0 +1,18 @@
+@prefix :      <https://ex.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xs:    <http://www.w3.org/2001/XMLSchema#> .
+
+[ a            sh:ValidationReport ;
+  sh:conforms  false ;
+  sh:result    [ a                             sh:ValidationResult ;
+                 sh:focusNode                  :s2 ;
+                 sh:resultMessage              "Property needs to have at least 4 values, but found 3" ;
+                 sh:resultPath                 :hasVertice ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:MinCountConstraintComponent ;
+                 sh:sourceShape                [] 
+               ]
+] .
