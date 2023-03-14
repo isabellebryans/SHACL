@@ -11,6 +11,7 @@ import org.eclipse.rdf4j.repository.Repository;
 import org.eclipse.rdf4j.repository.RepositoryConnection;
 import org.eclipse.rdf4j.repository.RepositoryException;
 import org.eclipse.rdf4j.repository.sail.SailRepository;
+import org.eclipse.rdf4j.repository.sail.SailRepositoryConnection;
 import org.eclipse.rdf4j.rio.RDFFormat;
 import org.eclipse.rdf4j.rio.Rio;
 import org.eclipse.rdf4j.sail.memory.MemoryStore;
@@ -21,46 +22,52 @@ import org.example.TopQuadrant.Main_TopQuadrant;
 import org.example.loadData;
 
 import java.io.*;
-
+import java.io.StringReader;
 public class Main_RDF4J {
     public static File getFileFromResource(String fileName) {
         return new File(Main_RDF4J.class.getClassLoader().getResource(fileName).getFile());
     }
+    public static void main(String[] args) throws IOException {
 
-    public static void main(String[] args) throws FileNotFoundException, IOException {
-        System.out.println("Hello world!");
         ShaclSail shaclSail = new ShaclSail(new MemoryStore());
-        Repository repo = new SailRepository(shaclSail);
 
-        try (RepositoryConnection connection = repo.getConnection()){
+        // Logger root = (Logger) LoggerFactory.getLogger(ShaclSail.class.getName());
+        // root.setLevel(Level.INFO);
+
+        // shaclSail.setLogValidationPlans(true);
+        // shaclSail.setGlobalLogValidationExecution(true);
+        // shaclSail.setLogValidationViolations(true);
+
+        SailRepository sailRepository = new SailRepository(shaclSail);
+        sailRepository.init();
+
+        try (SailRepositoryConnection connection = sailRepository.getConnection()) {
 
             connection.begin();
 
-            // Convert shapes file to a Reader (string of characters)
             Reader shaclRules = new FileReader(Main_RDF4J.getFileFromResource("shapes.ttl"));
 
             connection.add(shaclRules, "", RDFFormat.TURTLE, RDF4J.SHACL_SHAPE_GRAPH);
             connection.commit();
 
-            Reader data = new FileReader(Main_RDF4J.getFileFromResource("db.ttl"));
+            connection.begin();
+
+            Reader data = new FileReader(Main_RDF4J.getFileFromResource("db_incorrect.ttl"));
+
             connection.add(data, "", RDFFormat.TURTLE);
-
-            try { connection.commit(); }
-            catch (RepositoryException exception){
+            try {
+                connection.commit();
+            } catch (RepositoryException exception) {
                 Throwable cause = exception.getCause();
-                if (cause instanceof ShaclSailValidationException){
-                    System.out.println("SHALC VIOLATION!!!");
-                    ValidationReport report = ((ShaclSailValidationException) cause).getValidationReport();
-                    Model reportModel = ((ShaclSailValidationException) cause).validationReportAsModel();
-                    Rio.write(reportModel, System.out, RDFFormat.TURTLE);
-                } throw exception;
+                if (cause instanceof ShaclSailValidationException) {
+                    ValidationReport validationReport = ((ShaclSailValidationException) cause).getValidationReport();
+                    Model validationReportModel = ((ShaclSailValidationException) cause).validationReportAsModel();
+                    // use validationReport or validationReportModel to understand validation violations
+
+                    Rio.write(validationReportModel, System.out, RDFFormat.TURTLE);
+                }
+                throw exception;
             }
-
-
-
         }
-
-
-
     }
 }
