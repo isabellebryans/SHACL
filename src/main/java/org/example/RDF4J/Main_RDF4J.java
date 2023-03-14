@@ -20,7 +20,6 @@ import org.eclipse.rdf4j.sail.shacl.results.ValidationReport;
 import org.example.TopQuadrant.Main_TopQuadrant;
 import org.example.loadData;
 
-
 import java.io.*;
 
 public class Main_RDF4J {
