@@ -26,6 +26,7 @@
             <artifactId>jena-arq</artifactId>
             <version>3.14.0</version>
         </dependency>
+
     </dependencies>
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
