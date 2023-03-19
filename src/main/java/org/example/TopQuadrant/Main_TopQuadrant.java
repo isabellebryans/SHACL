@@ -24,6 +24,7 @@ public class Main_TopQuadrant {
         Model resultModel = validationResult.getModel();
         resultModel.setNsPrefix(SH.PREFIX, SH.NS);
         RDFDataMgr.write(new FileOutputStream("report.ttl"), resultModel, Lang.TURTLE);
-
+        RDFDataMgr.write(System.out, resultModel, Lang.TTL);
+        
     }
 }

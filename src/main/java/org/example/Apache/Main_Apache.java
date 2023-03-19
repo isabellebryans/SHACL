@@ -17,8 +17,8 @@ public class Main_Apache {
 
     public static void main(String[] args) throws FileNotFoundException {
         // Load graphs
-        Graph dataGraph = loadData.initAndLoadModelFromResource("db.ttl", Lang.TURTLE).getGraph();
-        Graph shapesGraph = loadData.initAndLoadModelFromResource("shapes.ttl", Lang.TURTLE).getGraph();
+        Graph dataGraph = loadData.initAndLoadModelFromResource("meteo1.ttl", Lang.TURTLE).getGraph();
+        Graph shapesGraph = loadData.initAndLoadModelFromResource("meteoShapes.ttl", Lang.TURTLE).getGraph();
         Shapes shapes = Shapes.parse(shapesGraph);
 
         ValidationReport report = ShaclValidator.get().validate(shapes, dataGraph);

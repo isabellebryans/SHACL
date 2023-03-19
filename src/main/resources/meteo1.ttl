@@ -1,0 +1,3145 @@
+@prefix rr:      <http://www.w3.org/ns/r2rml#> .
+@prefix weo:     <http://ns.inria.fr/meteo/ontology/> .
+@prefix qudt:    <http://qudt.org/schema/qudt/> .
+@prefix wep:     <http://ns.inria.fr/meteo/ontology/property/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xrr:     <http://i3s.unice.fr/xr2rml#> .
+@prefix time:    <http://www.w3.org/2006/time#> .
+@prefix sosa:    <http://www.w3.org/ns/sosa/> .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210119090000_07650/tend24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07650> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "70"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-01-19T09:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-19T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210209030000_07481/code_tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07481> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> ;
+    sosa:resultTime "2021-02-09T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210209090000_07790/dd>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07790> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "220"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-09T09:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-09T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210311150000_07335/etat_sol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07335> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasResult <http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901/2> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> ;
+    sosa:resultTime "2021-03-11T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210307090000_71805/td>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/71805> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "266.950000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> ;
+    sosa:resultTime "2021-03-07T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210222210000_07149/tend24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07149> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "1220"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-02-22T21:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-22T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210119000000_07020/n>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07020> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "100"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> ;
+    sosa:resultTime "2021-01-19T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210113030000_07650/tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07650> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "0"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval3h ;
+              time:hasEnd "2021-01-13T03:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-13T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210112030000_07577/tend24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07577> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "400"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-01-12T03:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-12T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210322150000_89642/pres>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/89642> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "98910"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> ;
+    sosa:resultTime "2021-03-22T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210215060000_61996/t>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61996> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "295.250000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> ;
+    sosa:resultTime "2021-02-15T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210227000000_07481/vv>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07481> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "16000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> ;
+    sosa:resultTime "2021-02-27T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210104150000_07005/tend24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07005> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "-30"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-01-04T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-04T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210216120000_61980/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61980> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "101080"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-02-16T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210211120000_78925/tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/78925> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "220"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval3h ;
+              time:hasEnd "2021-02-11T12:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-11T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210125090000_07747/n>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07747> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "90"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> ;
+    sosa:resultTime "2021-01-25T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210312030000_07650/code_tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07650> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> ;
+    sosa:resultTime "2021-03-12T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210302060000_07280/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07280> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "103090"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-03-02T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210314120000_81408/u>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/81408> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "94"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> ;
+    sosa:resultTime "2021-03-14T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210215060000_61996/u>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61996> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "74"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> ;
+    sosa:resultTime "2021-02-15T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210205000000_07168/tend24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07168> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "-150"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-02-05T00:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-05T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210302150000_07761/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07761> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "0.000000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-03-02T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-02T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210303090000_07621/raf10>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07621> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> ;
+    sosa:hasSimpleResult
+            "0.500000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-03-03T09:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-03T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210207090000_07181/dd>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07181> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "250"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-07T09:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-07T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210211060000_07790/code_tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07790> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> ;
+    sosa:resultTime "2021-02-11T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210308090000_07299/vv>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07299> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "12000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> ;
+    sosa:resultTime "2021-03-08T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210211150000_07299/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07299> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "102780"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-02-11T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210223210000_61998/pres>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61998> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "100790"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> ;
+    sosa:resultTime "2021-02-23T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210311030000_78922/dd>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/78922> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "100"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-03-11T03:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-11T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210328180000_07643/tn12>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07643> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "276.750000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval12h ;
+              time:hasEnd "2021-03-28T18:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-28T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210225030000_07335/etat_sol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07335> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasResult <http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901/0> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> ;
+    sosa:resultTime "2021-02-25T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210111000000_07335/t>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07335> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "270.750000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> ;
+    sosa:resultTime "2021-01-11T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210319150000_81415/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/81415> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "101320"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-03-19T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210204090000_07110/etat_sol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07110> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasResult <http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901/2> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> ;
+    sosa:resultTime "2021-02-04T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210107120000_07577/td>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07577> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "271.550000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> ;
+    sosa:resultTime "2021-01-07T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210106000000_07471/tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07471> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "-20"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval3h ;
+              time:hasEnd "2021-01-06T00:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-06T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210319000000_07190/ff>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07190> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "2.100000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-03-19T00:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-19T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210120060000_07222/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07222> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "0.400000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-01-20T06:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-20T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210216120000_07690/ff>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07690> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "2.600000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-16T12:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-16T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210118090000_07110/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07110> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "102690"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-01-18T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210212060000_07627/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07627> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "101380"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-02-12T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210128090000_07072/tminsol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07072> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "278.350000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/minSoilTemperature> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval12h ;
+              time:hasEnd "2021-01-28T09:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-28T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210108120000_07460/pres>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07460> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "97790"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> ;
+    sosa:resultTime "2021-01-08T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210125090000_07149/pres>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07149> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "99480"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> ;
+    sosa:resultTime "2021-01-25T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210121060000_07434/tx12>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07434> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "283.150000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/maxAirTemperature> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval12h ;
+              time:hasEnd "2021-01-21T06:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-21T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210306210000_07207/tend24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07207> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "-230"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-03-06T21:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-06T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210125090000_07747/t>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07747> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "283.350000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> ;
+    sosa:resultTime "2021-01-25T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210222210000_07072/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07072> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "102480"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-02-22T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210202090000_07027/vv>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07027> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "19490"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> ;
+    sosa:resultTime "2021-02-02T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210106210000_07110/pres>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07110> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "100710"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> ;
+    sosa:resultTime "2021-01-06T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210213060000_78922/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/78922> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "0.000000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-02-13T06:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-13T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210201150000_07240/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07240> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "99980"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-02-01T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210214150000_07280/tminsol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07280> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "273.050000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/minSoilTemperature> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval12h ;
+              time:hasEnd "2021-02-14T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-14T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210109150000_07650/td>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07650> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "270.350000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> ;
+    sosa:resultTime "2021-01-09T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210327090000_07280/tend24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07280> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "740"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-03-27T09:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-27T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210324060000_78897/code_tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/78897> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> ;
+    sosa:resultTime "2021-03-24T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210126150000_07790/vv>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07790> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "45990"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> ;
+    sosa:resultTime "2021-01-26T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210309150000_07510/hbas>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07510> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "1250"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> ;
+    sosa:resultTime "2021-03-09T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210123150000_07335/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07335> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "5.400000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-01-23T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-23T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210128180000_07690/dd>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07690> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "100"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-01-28T18:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-28T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210209030000_07020/raf10>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07020> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> ;
+    sosa:hasSimpleResult
+            "15.200000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-09T03:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-09T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210112030000_07027/n>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07027> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "100"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> ;
+    sosa:resultTime "2021-01-12T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210128210000_07110/tend24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07110> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "-840"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-01-28T21:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-28T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210330210000_07335/nbas>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07335> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "0"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover> ;
+    sosa:resultTime "2021-03-30T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210114120000_07621/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07621> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "102890"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-01-14T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210202120000_81405/u>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/81405> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "99"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> ;
+    sosa:resultTime "2021-02-02T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210215030000_07747/ff>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07747> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "2.900000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-15T03:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-15T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210131180000_07650/pres>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07650> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "99610"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> ;
+    sosa:resultTime "2021-01-31T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210125090000_07747/u>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07747> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "67"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> ;
+    sosa:resultTime "2021-01-25T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210214090000_07168/raf10>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07168> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> ;
+    sosa:hasSimpleResult
+            "3.400000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-14T09:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-14T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210305030000_07110/ht_neige>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07110> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "0.000000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> ;
+    sosa:resultTime "2021-03-05T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210204180000_61996/tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61996> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "40"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval3h ;
+              time:hasEnd "2021-02-04T18:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-04T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210330150000_81405/vv>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/81405> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "20870"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> ;
+    sosa:resultTime "2021-03-30T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210328180000_07027/td>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07027> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "279.350000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> ;
+    sosa:resultTime "2021-03-28T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210321120000_07335/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07335> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "0.000000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-03-21T12:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-21T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210319060000_07168/hbas>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07168> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "450"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> ;
+    sosa:resultTime "2021-03-19T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210120150000_07222/ht_neige>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07222> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "0.000000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> ;
+    sosa:resultTime "2021-01-20T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210203090000_07255/tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07255> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "120"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval3h ;
+              time:hasEnd "2021-02-03T09:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-03T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210221090000_07222/dd>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07222> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "150"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-21T09:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-21T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210217150000_07005/raf10>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07005> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> ;
+    sosa:hasSimpleResult
+            "8.300000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-17T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-17T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210203060000_07130/tn12>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07130> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "283.250000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval12h ;
+              time:hasEnd "2021-02-03T06:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-03T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210125060000_07630/ht_neige>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07630> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "0.000000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> ;
+    sosa:resultTime "2021-01-25T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210106060000_07037/dd>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07037> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "20"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-01-06T06:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-06T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210314180000_78894/dd>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/78894> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "190"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-03-14T18:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-14T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210124150000_07181/vv>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07181> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "60000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> ;
+    sosa:resultTime "2021-01-24T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210226090000_07168/pres>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07168> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "101920"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> ;
+    sosa:resultTime "2021-02-26T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210319120000_61968/dd>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61968> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "110"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-03-19T12:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-19T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210215150000_07471/ff>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07471> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "3.600000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-15T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-15T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210307210000_07434/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07434> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "0.400000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-03-07T21:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-07T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210206060000_07761/vv>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07761> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "47200"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> ;
+    sosa:resultTime "2021-02-06T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210128030000_81405/td>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/81405> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "294.850000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> ;
+    sosa:resultTime "2021-01-28T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210203150000_07630/raf10>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07630> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> ;
+    sosa:hasSimpleResult
+            "7.600000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-03T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-03T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210214030000_78925/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/78925> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "0.200000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-02-14T03:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-14T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210227210000_07790/tend24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07790> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "-90"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-02-27T21:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-27T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210130090000_07207/etat_sol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07207> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasResult <http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901/1> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> ;
+    sosa:resultTime "2021-01-30T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210302120000_71805/ht_neige>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/71805> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "0.050000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> ;
+    sosa:resultTime "2021-03-02T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210315000000_07434/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07434> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "0.000000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-03-15T00:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-15T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210121150000_07110/etat_sol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07110> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasResult <http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901/2> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> ;
+    sosa:resultTime "2021-01-21T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210118180000_07139/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07139> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "0.000000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-01-18T18:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-18T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210305180000_07747/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07747> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "0.000000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-03-05T18:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-05T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210222120000_81415/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/81415> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "12.100000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-02-22T12:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-22T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210117060000_61976/tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61976> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "40"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval3h ;
+              time:hasEnd "2021-01-17T06:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-17T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210122090000_07015/pres>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07015> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "98780"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> ;
+    sosa:resultTime "2021-01-22T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210123150000_07255/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07255> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "99390"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-01-23T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210124000000_07460/vv>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07460> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "59730"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> ;
+    sosa:resultTime "2021-01-24T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210315120000_07690/dd>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07690> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "110"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-03-15T12:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-15T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210322120000_07747/tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07747> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "-20"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval3h ;
+              time:hasEnd "2021-03-22T12:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-22T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210105180000_07650/nbas>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07650> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "1"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover> ;
+    sosa:resultTime "2021-01-05T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210329180000_07747/etat_sol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07747> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasResult <http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901/0> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> ;
+    sosa:resultTime "2021-03-29T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210310120000_07627/dd>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07627> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "90"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-03-10T12:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-10T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210308210000_07434/u>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07434> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "63"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> ;
+    sosa:resultTime "2021-03-08T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210317210000_07761/u>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07761> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "85"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> ;
+    sosa:resultTime "2021-03-17T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210112030000_07027/t>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07027> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "280.350000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> ;
+    sosa:resultTime "2021-01-12T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210216060000_07299/n>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07299> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "100"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> ;
+    sosa:resultTime "2021-02-16T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210111000000_07335/u>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07335> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "89"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> ;
+    sosa:resultTime "2021-01-11T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210115210000_07280/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07280> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "1.400000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-01-15T21:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-15T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210111210000_07471/code_tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07471> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> ;
+    sosa:resultTime "2021-01-11T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210228150000_61968/tx24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61968> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "304.050000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/maxAirTemperature> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-02-28T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-28T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210113120000_07110/tminsol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07110> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "280.750000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/minSoilTemperature> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval12h ;
+              time:hasEnd "2021-01-13T12:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-13T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210118000000_07471/nbas>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07471> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "8"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover> ;
+    sosa:resultTime "2021-01-18T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210203180000_07535/pres>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07535> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "98230"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> ;
+    sosa:resultTime "2021-02-03T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210216120000_07149/code_tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07149> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> ;
+    sosa:resultTime "2021-02-16T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210112030000_07027/u>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07027> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "92"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> ;
+    sosa:resultTime "2021-01-12T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210317210000_07761/t>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07761> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "281.750000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> ;
+    sosa:resultTime "2021-03-17T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210210120000_81405/vv>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/81405> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "34960"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> ;
+    sosa:resultTime "2021-02-10T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210228120000_07535/code_tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07535> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> ;
+    sosa:resultTime "2021-02-28T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210210150000_78922/tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/78922> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "100"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval3h ;
+              time:hasEnd "2021-02-10T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-10T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210115180000_07005/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07005> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "1.000000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-01-15T18:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-15T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210322090000_07117/vv>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07117> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "10000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> ;
+    sosa:resultTime "2021-03-22T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210106090000_07207/vv>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07207> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "15000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> ;
+    sosa:resultTime "2021-01-06T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210216180000_81401/tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/81401> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "230"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval3h ;
+              time:hasEnd "2021-02-16T18:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-16T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210124210000_07661/raf10>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07661> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> ;
+    sosa:hasSimpleResult
+            "14.500000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-01-24T21:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-24T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210328000000_07181/tminsol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07181> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "274.850000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/minSoilTemperature> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval12h ;
+              time:hasEnd "2021-03-28T00:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-28T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210314120000_81408/t>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/81408> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "298.350000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> ;
+    sosa:resultTime "2021-03-14T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210221150000_07481/vv>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07481> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "40000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> ;
+    sosa:resultTime "2021-02-21T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210317030000_07037/hbas>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07037> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "800"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> ;
+    sosa:resultTime "2021-03-17T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210217180000_07280/ff>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07280> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "1.700000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-17T18:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-17T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210331150000_07627/ff>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07627> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "2.300000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-03-31T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-31T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210102090000_07643/tminsol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07643> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "273.150000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/minSoilTemperature> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval12h ;
+              time:hasEnd "2021-01-02T09:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-02T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210308210000_07434/t>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07434> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "277.250000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> ;
+    sosa:resultTime "2021-03-08T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210301060000_61998/tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61998> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "130"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval3h ;
+              time:hasEnd "2021-03-01T06:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-01T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210225180000_61968/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61968> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "0.000000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-02-25T18:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-25T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210203090000_07020/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07020> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "99220"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-02-03T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210109150000_07117/pres>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07117> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "101680"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> ;
+    sosa:resultTime "2021-01-09T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210131150000_61972/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61972> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "100960"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-01-31T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210111180000_07607/raf10>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07607> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> ;
+    sosa:hasSimpleResult
+            "0.600000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-01-11T18:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-11T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210108060000_07072/dd>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07072> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "360"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-01-08T06:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-08T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210330120000_07181/pres>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07181> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "98960"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> ;
+    sosa:resultTime "2021-03-30T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210102090000_78894/tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/78894> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "70"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval3h ;
+              time:hasEnd "2021-01-02T09:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-02T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210129150000_07240/t>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07240> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "285.850000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> ;
+    sosa:resultTime "2021-01-29T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210119030000_07558/ht_neige>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07558> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "0.000000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> ;
+    sosa:resultTime "2021-01-19T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210114030000_71805/tend24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/71805> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "70"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-01-14T03:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-14T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210116120000_07190/nbas>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07190> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "8"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover> ;
+    sosa:resultTime "2021-01-16T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210131150000_07015/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07015> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "99680"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-01-31T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210327210000_07130/ff>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07130> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "2.600000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-03-27T21:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-27T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210206060000_78897/u>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/78897> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "84"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> ;
+    sosa:resultTime "2021-02-06T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210222030000_61980/code_tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61980> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> ;
+    sosa:resultTime "2021-02-22T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210328210000_07139/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07139> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "0.000000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-03-28T21:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-28T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210131120000_81405/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/81405> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "101330"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-01-31T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210114030000_07627/n>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07627> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "100"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> ;
+    sosa:resultTime "2021-01-14T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210110150000_07434/raf10>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07434> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> ;
+    sosa:hasSimpleResult
+            "10.200000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-01-10T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-10T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210129150000_07240/u>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07240> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "66"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> ;
+    sosa:resultTime "2021-01-29T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210222180000_61980/dd>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61980> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "130"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-22T18:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-22T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210125210000_07481/t>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07481> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "275.550000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> ;
+    sosa:resultTime "2021-01-25T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210207090000_61996/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61996> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "0.200000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-02-07T09:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-07T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210107000000_07627/pres>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07627> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "96660"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> ;
+    sosa:resultTime "2021-01-07T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210223060000_61968/tn24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61968> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "296.550000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-02-23T06:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-23T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210206060000_78897/t>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/78897> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "295.150000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> ;
+    sosa:resultTime "2021-02-06T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210124150000_07558/tend24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07558> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "480"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-01-24T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-24T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210111210000_07110/etat_sol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07110> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasResult <http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901/0> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> ;
+    sosa:resultTime "2021-01-11T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210112090000_07747/tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07747> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "260"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval3h ;
+              time:hasEnd "2021-01-12T09:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-12T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210217090000_07020/ff>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07020> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "10.900000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-17T09:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-17T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210328180000_07761/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07761> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "0.000000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-03-28T18:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-28T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210201180000_71805/etat_sol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/71805> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasResult <http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901/0> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> ;
+    sosa:resultTime "2021-02-01T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210105030000_78890/t>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/78890> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "298.150000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> ;
+    sosa:resultTime "2021-01-05T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210308090000_78890/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/78890> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "0.200000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-03-08T09:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-08T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210313060000_07558/tn12>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07558> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "276.250000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval12h ;
+              time:hasEnd "2021-03-13T06:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-13T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210304120000_07481/u>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07481> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "54"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> ;
+    sosa:resultTime "2021-03-04T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210126120000_07790/u>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07790> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "27"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> ;
+    sosa:resultTime "2021-01-26T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210304120000_07181/nbas>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07181> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "1"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover> ;
+    sosa:resultTime "2021-03-04T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210131000000_07577/tminsol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07577> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "275.050000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/minSoilTemperature> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval12h ;
+              time:hasEnd "2021-01-31T00:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-31T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210125210000_07481/u>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07481> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "79"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> ;
+    sosa:resultTime "2021-01-25T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210318150000_07790/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07790> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "101460"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-03-18T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210227030000_07255/vv>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07255> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "20000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> ;
+    sosa:resultTime "2021-02-27T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210123210000_07690/td>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07690> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "276.550000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> ;
+    sosa:resultTime "2021-01-23T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210205150000_07558/ht_neige>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07558> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "0.000000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> ;
+    sosa:resultTime "2021-02-05T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210307210000_07607/dd>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07607> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "340"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-03-07T21:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-07T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210321090000_07335/etat_sol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07335> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasResult <http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901/0> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> ;
+    sosa:resultTime "2021-03-21T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210311000000_07650/tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07650> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "-30"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval3h ;
+              time:hasEnd "2021-03-11T00:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-11T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210104000000_07577/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07577> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "101120"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-01-04T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210128000000_07168/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07168> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "101440"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-01-28T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210224150000_61972/code_tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61972> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> ;
+    sosa:resultTime "2021-02-24T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210207120000_07577/tend24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07577> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "-90"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-02-07T12:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-07T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210227060000_07314/raf10>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07314> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> ;
+    sosa:hasSimpleResult
+            "12.900000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-27T06:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-27T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210130090000_07222/ht_neige>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07222> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "0.000000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCoverHeight> ;
+    sosa:resultTime "2021-01-30T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210228030000_07591/code_tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07591> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> ;
+    sosa:resultTime "2021-02-28T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210102150000_61980/dd>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61980> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "130"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-01-02T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-02T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210211150000_07434/tminsol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07434> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "275.650000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/minSoilTemperature> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval12h ;
+              time:hasEnd "2021-02-11T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-11T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210308060000_07255/raf10>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07255> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> ;
+    sosa:hasSimpleResult
+            "2.000000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-03-08T06:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-08T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210303000000_07747/t>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07747> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "282.950000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> ;
+    sosa:resultTime "2021-03-03T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210109030000_07168/n>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07168> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "100"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/totalCloudCover> ;
+    sosa:resultTime "2021-01-09T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210310030000_78925/vv>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/78925> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "48160"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> ;
+    sosa:resultTime "2021-03-10T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210121210000_07027/hbas>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07027> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "450"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> ;
+    sosa:resultTime "2021-01-21T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210126120000_07790/t>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07790> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "286.050000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> ;
+    sosa:resultTime "2021-01-26T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210327210000_61976/code_tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61976> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> ;
+    sosa:resultTime "2021-03-27T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210211120000_07207/tend24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07207> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "790"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-02-11T12:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-11T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210317000000_81415/tn24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/81415> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "296.150000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-03-17T00:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-17T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210305180000_07621/hbas>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07621> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "800"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> ;
+    sosa:resultTime "2021-03-05T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210313000000_07621/dd>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07621> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "170"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-03-13T00:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-13T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210218060000_07761/nbas>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07761> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "0"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/lowCloudCover> ;
+    sosa:resultTime "2021-02-18T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210113210000_07690/etat_sol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07690> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasResult <http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901/0> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> ;
+    sosa:resultTime "2021-01-13T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210205090000_89642/hbas>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/89642> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/cloud> ;
+    sosa:hasSimpleResult
+            "2250"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/cloudBaseAltitude> ;
+    sosa:resultTime "2021-02-05T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210117150000_07607/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07607> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "102890"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-01-17T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210303000000_07747/u>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07747> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "95"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> ;
+    sosa:resultTime "2021-03-03T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210216060000_07299/t>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07299> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "275.550000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> ;
+    sosa:resultTime "2021-02-16T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210330150000_07207/raf10>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07207> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> ;
+    sosa:hasSimpleResult
+            "7.400000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-03-30T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-30T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210203030000_07510/raf10>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07510> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> ;
+    sosa:hasSimpleResult
+            "7.400000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-03T03:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-03T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210222030000_07650/etat_sol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07650> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasResult <http://ns.inria.fr/meteo/vocab/weatherpropery/wmocode/0901/0> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stateGround> ;
+    sosa:resultTime "2021-02-22T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210331090000_61976/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61976> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "101190"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-03-31T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210114120000_07434/tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07434> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "-160"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval3h ;
+              time:hasEnd "2021-01-14T12:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-14T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210128090000_07005/code_tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07005> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> ;
+    sosa:resultTime "2021-01-28T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210102150000_07630/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07630> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "0.000000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-01-02T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-02T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210226150000_07558/raf10>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07558> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> ;
+    sosa:hasSimpleResult
+            "5.600000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-26T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-26T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210217060000_07761/raf10>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07761> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/gust> ;
+    sosa:hasSimpleResult
+            "4.600000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/gustSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-17T06:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-17T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210316180000_07690/code_tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07690> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> ;
+    sosa:resultTime "2021-03-16T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210216060000_07299/u>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07299> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "89"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> ;
+    sosa:resultTime "2021-02-16T06:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210131210000_07110/u>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07110> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "94"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> ;
+    sosa:resultTime "2021-01-31T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210128120000_81408/ff>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/81408> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "0.600000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-01-28T12:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-28T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210108090000_61996/ff>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/61996> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "5.300000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-01-08T09:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-08T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210219090000_81401/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/81401> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "0.200000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-02-19T09:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-19T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210228180000_07643/code_tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07643> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/pressureTendency> ;
+    sosa:resultTime "2021-02-28T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210306000000_78922/pres>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/78922> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "101060"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> ;
+    sosa:resultTime "2021-03-06T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210125150000_07661/vv>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07661> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "25000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> ;
+    sosa:resultTime "2021-01-25T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210129180000_07207/rr24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07207> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/precipitation> ;
+    sosa:hasSimpleResult
+            "1.600000"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/precipitationAmount> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-01-29T18:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-29T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210305000000_07255/td>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07255> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "277.050000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/dewPointTemperature> ;
+    sosa:resultTime "2021-03-05T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210131210000_07110/t>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07110> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "283.850000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airTemperature> ;
+    sosa:resultTime "2021-01-31T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210119030000_81415/tn24>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/81415> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "295.950000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/minAirTemperature> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval24h ;
+              time:hasEnd "2021-01-19T03:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-19T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210219210000_07558/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07558> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "101990"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-02-19T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210202210000_07535/ff>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07535> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "3.900000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-02-02T21:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-02-02T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210315120000_07607/pmer>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07607> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "102870"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/seaLevelPressure> ;
+    sosa:resultTime "2021-03-15T12:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210107210000_07621/ff>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07621> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "2.200000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageSpeed> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-01-07T21:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-01-07T21:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210305180000_78890/tend>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/78890> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "210"^^xsd:int ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/differentialPressure> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval3h ;
+              time:hasEnd "2021-03-05T18:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-05T18:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210316000000_07314/dd>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07314> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "350"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-03-16T00:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-16T00:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210318150000_07037/tminsol>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07037> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "276.050000"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/minSoilTemperature> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval12h ;
+              time:hasEnd "2021-03-18T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-18T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210323090000_07510/vv>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07510> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/ground> ;
+    sosa:hasSimpleResult
+            "16160"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/horizontalVisibility> ;
+    sosa:resultTime "2021-03-23T09:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210314150000_07558/dd>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07558> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/wind> ;
+    sosa:hasSimpleResult
+            "310"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/windAverageDirection> ;
+    sosa:phenomenonTime
+            [ a       weo:Interval10m ;
+              time:hasEnd "2021-03-14T15:00:00"^^xsd:dateTime
+            ] ;
+    sosa:resultTime "2021-03-14T15:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210308030000_07190/pres>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07190> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "100260"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> ;
+    sosa:resultTime "2021-03-08T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210110030000_07643/pres>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07643> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "101260"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/stationPressure> ;
+    sosa:resultTime "2021-01-10T03:00:00"^^xsd:dateTime .
+
+<http://ns.inria.fr/meteo/observation/obs_at_20210119000000_07020/u>
+    a       weo:MeteorologicalObservation ;
+    wep:madeByStation <http://ns.inria.fr/meteo/weatherstation/07020> ;
+    sosa:hasFeatureOfInterest
+            <http://ns.inria.fr/meteo/vocab/meteorologicalfeature/air> ;
+    sosa:hasSimpleResult
+            "93"^^xsd:double ;
+    sosa:observedProperty
+            <http://ns.inria.fr/meteo/vocab/weatherproperty/airRelativeHumidity> ;
+    sosa:resultTime "2021-01-19T00:00:00"^^xsd:dateTime .
+

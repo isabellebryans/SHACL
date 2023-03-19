@@ -47,11 +47,12 @@ public class Main_RDF4J {
             catch (RepositoryException exception) {
                 Throwable cause = exception.getCause();
                 if (cause instanceof ShaclSailValidationException) {
-                    ValidationReport validationReport = ((ShaclSailValidationException) cause).getValidationReport();
+                    //ValidationReport validationReport = ((ShaclSailValidationException) cause).getValidationReport();
                     Model validationReportModel = ((ShaclSailValidationException) cause).validationReportAsModel();
                     // use validationReport or validationReportModel to understand validation violations
                     Rio.write(validationReportModel, System.out, RDFFormat.TURTLE);
                 }
+
                 throw exception;
             }
         }
